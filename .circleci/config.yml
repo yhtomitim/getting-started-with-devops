@@ -27,10 +27,12 @@ jobs:
           - v1-dependencies-
 
       - run:
-        command: |
-          npm install
-          npm run dev
-          npm test
+        command: npm install
+        command: npm run dev
+        command: npm test
+
+
+
       - save_cache:
           paths:
             - node_modules
