@@ -28,9 +28,9 @@ jobs:
 
       - run:
         command: |
-          npm install
-          npm run dev
-          npm test
+          - npm install
+          - npm run dev
+          - npm test
 
       - save_cache:
           paths:
